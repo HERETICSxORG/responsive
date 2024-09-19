@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: orange;
+    }
+
+    .nav1 {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(70, 68, 68);
+        color: white;
+        line-height: 2;
+        font-weight: 700;
+    }
+
+    .nav2 {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        gap: 30px;
+        line-height: 4;
+        font-weight: 600
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 78vh;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    span:hover{color: red;}
+    span{cursor: pointer;
+    }
+
+    .box {
+        background-color: aqua;
+        height: 70px;
+        width: 200px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: 800;
+        border-radius: 4px;
+        
+    }
+    .footer{display: flex;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    height:40px;
+    align-items: center;}
+</style>
+
+<body>
+    <div class="nav1">
+        <h1>My Responsive Website</h1>
+    </div>
+    <div class="nav2">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+    </div>
+    <div class="container">
+        <div class="box" id="div1">Div 1</div>
+        <div class="box" id="div2">Div 2</div>
+        <div class="box" id="div1">Div 3</div>
+    </div>
+    <div class="footer">
+        &copy; 2024 My Responsive Website.
+    </div>
+
+</body>
+
+</html>
