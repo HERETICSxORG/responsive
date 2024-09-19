@@ -31,7 +31,8 @@
         background-color: black;
         color: white;
         gap: 30px;
-        line-height: 4;
+        /* line-height: 4; */
+        /* padding: 20px; */
         font-weight: 600
     }
 
@@ -43,10 +44,24 @@
         justify-content: space-between;
         justify-content: space-around;
         flex-wrap: wrap;
-        
+
     }
-    span:hover{color: red;}
-    span{cursor: pointer;
+
+    /* span:hover{color: red;} */
+    .nav2>ul>li {padding: 20px;
+        list-style: none;
+        /* height: 100%; */
+        width: auto;
+        cursor: pointer;
+    }
+
+    .nav2 ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav2 ul li:hover {
+        background-color: red
     }
 
     .box {
@@ -58,14 +73,17 @@
         justify-content: center;
         font-weight: 800;
         border-radius: 4px;
-        
+
     }
-    .footer{display: flex;
-    background-color: black;
-    color:white;
-    justify-content: center;
-    height:40px;
-    align-items: center;}
+
+    .footer {
+        display: flex;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+    }
 </style>
 
 <body>
@@ -73,11 +91,17 @@
         <h1>My Responsive Website</h1>
     </div>
     <div class="nav2">
-        <span>Home</span>
-        <span>About</span>
-        <span>Services</span>
-        <span>Contact</span>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Menu</li>
+        </ul>
+
     </div>
+    <marquee behavior="scroll" direction="right">
+        <h1>HELLO THERE</h1>
+    </marquee>
     <div class="container">
         <div class="box" id="div1">Div 1</div>
         <div class="box" id="div2">Div 2</div>
