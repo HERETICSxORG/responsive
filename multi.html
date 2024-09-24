@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: beige;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(44, 119, 133);
+        gap: 50px;
+    }
+
+    .a1 {
+        display: inline;
+        gap: 30px;
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        font-size: larger;
+        transition: .2s ease;
+    }
+
+    .a1:hover {
+        transform: translateY(-3px);
+        color: greenyellow;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+    }
+
+    .box {
+        height: 70vh;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex-wrap: wrap;
+        background-color: rgb(238, 198, 183);
+        gap: 40px;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        padding: 30 0px;
+        box-shadow: 0 0 35px black;
+        gap: 40x;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+    }
+
+    .img1 {
+        height: 35%;
+        width: 90%;
+        border-radius: 3px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+    }
+
+    @media (max-width:600px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            width: auto
+        }
+
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <a href="#" class="a1">Home</a>
+        <a href="#" class="a1">About us</a>
+        <a href="#" class="a1">OOP</a>
+        <a href="#" class="a1">Contact</a>
+    </div>
+    <div class="container">
+        <div class="box1 box">
+            <img class="img1" src="assets/img1.jpg" alt="">
+            <h1>What is Python?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sequi dicta eum qui, totam ad facilis
+                mollitia deleniti, assumenda illo temporibus tempora nulla minus eaque?</p>
+        </div>
+        <div class="box2 box"><img class="img1" src="assets/img2.jpg" alt="">
+            <h1>Components of Python</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor adipisci deserunt accusantium
+                sit iure! Quasi amet optio rem suscipit alias fuga beatae quos odit!</p>
+        </div>
+        <div class="box3 box"><img class="img1" src="assets/img3.webp" class="img3" alt="">
+            <h1>Advantages of Using Python</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis quisquam soluta eveniet nam
+                quo ut veritatis esse culpa recusandae, consequatur accusamus voluptatem expedita iure?</p>
+        </div>
+    </div>
+    <footer> &copy; Python Programming Tutorials</footer>
+</body>
+
+</html>

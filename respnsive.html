@@ -10,10 +10,18 @@
     * {
         padding: 0;
         margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ::selection{background-color: #000000;
+    color: aqua;}
+
+    :root {
+        --color: crimson;
+        --seccolor: aqua
     }
 
     body {
-        background-color: orange;
+        background-color: var(--color);
     }
 
     .nav1 {
@@ -30,7 +38,8 @@
         justify-content: center;
         background-color: black;
         color: white;
-        gap: 30px;
+        /* gap: 30px; */
+        justify-content: space-evenly;
         /* line-height: 4; */
         /* padding: 20px; */
         font-weight: 600
@@ -48,7 +57,8 @@
     }
 
     /* span:hover{color: red;} */
-    .nav2>ul>li {padding: 20px;
+    .nav2>ul>li {
+        padding: 20px;
         list-style: none;
         /* height: 100%; */
         width: auto;
@@ -61,7 +71,9 @@
     }
 
     .nav2 ul li:hover {
-        background-color: red
+        background-color: var(--seccolor);
+        color: var(--color);
+
     }
 
     .box {
@@ -73,7 +85,12 @@
         justify-content: center;
         font-weight: 800;
         border-radius: 4px;
+        transition: transform .2s ease, box-shadow .2s ease;
+        cursor: pointer;
+    }
 
+    .box:hover {
+        transform: translateY(5px);
     }
 
     .footer {
@@ -83,6 +100,15 @@
         justify-content: center;
         height: 40px;
         align-items: center;
+        position: sticky;
+        bottom: 0px;
+    }
+
+    @media (max-width:400px) {
+        .nav2 {
+            display: none;
+        }
+
     }
 </style>
 
@@ -103,7 +129,7 @@
         <h1>HELLO THERE</h1>
     </marquee>
     <div class="container">
-        <div class="box" id="div1">Div 1</div>
+        <div class="box" id="div1"><kbd>Div 1</kbd></div>
         <div class="box" id="div2">Div 2</div>
         <div class="box" id="div1">Div 3</div>
     </div>
