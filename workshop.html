@@ -4,15 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workshop</title>
 </head>
+<link data-rh="true" rel="icon" href="assets/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
     * {
         margin: 0;
         padding: 10px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        font-family:"Poppins";
+        /* color: var(--color); */
     }
-
+    /* html{ background-color: #05160df0; } */
+    :root {
+        --color: #48b686;
+        --seccolor: aqua
+    }
     input {
         transition: .2s ease;
     }
@@ -38,7 +48,7 @@
     }
 
     body {
-        background: linear-gradient(#e1e7e6, #486f48);
+        background: linear-gradient(#1b1a1a, #012e1b);
     }
 
     input[type=text],
@@ -50,7 +60,8 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        background-color: beige;
+        background-color:#cccccc;
+        outline: solid rgb(25, 24, 24);
     }
 
     input[type=number] {
@@ -61,7 +72,9 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        background-color: beige;
+        background-color:#cccccc;
+        outline: solid rgb(25, 24, 24);
+
     }
 
     textarea {
@@ -73,15 +86,17 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        background-color: beige;
+        background-color: #cccccc;
+        outline: solid rgb(25, 24, 24);
+
     }
 
     .submit {
         display: flex;
         justify-content: center;
         width: 90%;
-        background-color: #4CAF50;
-        color: rgb(14, 7, 7);
+        background-color: #303333;
+        color: var(--color);
         padding: 10px;
         margin: 8px 0;
         border: none;
@@ -91,18 +106,24 @@
         line-height: 2.5;
         transition: .2s ease;
     }
+    .submit:hover{transform: translateY(-5px);transform: scale(1.1);filter: drop-shadow(0px 0px 10px var(--color));
+    }
 
     .container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 20px;
+        /* gap: 20px; */
         width: 90%;
         border-radius: 5px;
-        background-color: #9cbe9c;
-        filter: drop-shadow(10px 10px 10px black);
+        background-color: rgb(25, 24, 24);
+        border: #42e75b  solid 1px;
+        color: #48b686;
+        filter: drop-shadow(0px 0px 10px var(--color));
     }
+    /* .container:hover{        filter: drop-shadow(0px 0px 10px var(--color));} */
+
 
     form {
         display: flex;
@@ -114,8 +135,10 @@
 
     .pfp {
         width: 50%;
+        height: auto;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     img {
@@ -130,36 +153,48 @@
         width: 100%;
         margin-top: 20px;
         border-collapse: collapse;
+        overflow: scroll;
     }
 
     table,
     th,
     td {
-        /* border: 1px solid black; */
+        border: 0.8px solid #a9afac;
         padding: 10px;
         text-align: left;
-        /* border-radius: 5px; */
+        border-radius: 2px;
     }
 
     th {
         background-color: #697169;
         color: rgb(15, 227, 86);
     }
+    table td:hover{background-color: #9de8c8;}
 
 
     .table_s {
         margin-top: 20px;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        /* overflow: scroll; */
     }
 
     .table-wrapper {
-        width: 80%;
-        background-color: #9cbe9c;
+        width: 100%;
+        background-color: #1b1a1a;
+        /* color: var(--color); */
         border-radius: 4px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: scroll;
+        word-wrap:normal;
+        border: #42e75b solid 1px;
+        filter: drop-shadow(0px 0px 10px var(--color))
+
     }
+    /* .table-wrapper:hover{        filter: drop-shadow(0px 0px 10px var(--color));
+    } */
 
     table th,
     table td {
@@ -168,49 +203,53 @@
     }
 
     table th {
-        background-color: #828f82;
-        color: rgb(22, 62, 44);
+        background-color: #303333;
+        color: var(--color);
         font-weight: bold;
         text-align: left;
     }
 
     table td {
-        background-color: #c7d3a1;
+        background-color: #cccccc;
     }
 
     .no-intermediate {
-        background-color: #a0ab7f;
+        background-color:#303333 ;
         text-align: center;
         font-weight: bold;
-        color: #000;
+        color:var(--color) ;
     }
+    .no-intermediate:hover{background-color: #303333;}
 
     .tablem {
         display: flex;
         justify-content: center;
         height: 100%;
-        width: 100%;
+        width: 93%;
         cursor: pointer;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         border-radius: 10px;
         filter: drop-shadow(5px 5px 5px black);
-        overflow: scroll;
+        /* overflow: scroll; */
 
     }
 
     .topic {
         text-align: center;
         font-size: 36px;
-        font-weight: 600;
+        font-weight: 600;color: var(--color);
+        filter: drop-shadow( 0 0 50px);
+
     }
 
     .rec {
-        background-color: rgb(197, 122, 122);
+        background-color: rgb(163, 186, 185);
     }
+    h2{color: var(--color);}
 </style>
 
 <body>
-    <h1 class="topic">Python Workship Registeration</h1>
+    <h1 class="topic">Java Workshop Registeration</h1>
     <form action="#" method="post">
         <div class="container">
             <div class="pfp">
