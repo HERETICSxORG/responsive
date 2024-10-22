@@ -9,7 +9,7 @@ if (flag==0){
     flag = 1
 }
 else
-    {bulb.style.backgroundColor="black"
+    {bulb.style.backgroundColor="grey"
     console.log("off")
     flag=0
 }
