@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        background: gray;
+        padding-top: 30px;
+    }
+
+    /* .container>* {
+        display: grid;
+
+        color: rgb(21, 166, 144);
+        background: #000;
+        font-weight: 300;
+        
+        border: rgb(140, 29, 29) 1px solid;
+    } */
+    .container {
+        display: grid;
+        justify-content: center;
+        /* border: 2px solid; */
+
+    }
+
+    .cont1 {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(9, 1fr);
+        /* border-radius: 100px; */
+
+        /* width: auto; */
+        /* padding: 10px;
+        margin: 10px; */
+        /* gap: 10px 20px; */
+        /* grid-template-rows: repeat(8 ,140px); */
+    }
+
+    /* .cont1{ */
+    /* display: grid; */
+    /* padding: 10px;
+        margin: 10px; */
+    /* gap: 10px 20px; */
+    /* grid-template-rows: repeat(8 ,140px); */
+    /* grid-template-columns: repeat(8,80px); */
+    /* } */
+    .one {
+        background: #e8e2e2;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .one:hover {
+        background: #a29f9f;
+    }
+
+    .two:hover {
+        background: #1e1d1d;
+    }
+
+    .two {
+        background: #2e2b2b;
+        height: 80px;
+        width: 80px;
+
+        text-align: center;
+    }
+
+    .num {
+        text-align: right;
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .alpha {
+        text-align: right;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    #btl{border-top-left-radius: 5px;}
+    #bbl{border-bottom-left-radius: 5px;}
+    #bbr{border-bottom-right-radius: 5px;}
+    #btr{border-top-right-radius: 5px;}
+</style>
+
+<body>
+    <div class="container">
+        <div class="cont1">
+           
+
+            <div class="alpha">1</div>
+            <div class="one" id="btl">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two" id="btr">
+            </div>
+
+        </div>
+        <div class="cont1">
+            <div class="alpha">2</div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+        </div>
+        <div class="cont1">
+            <div class="alpha">3</div>
+
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+
+        </div>
+        <div class="cont1">
+            <div class="alpha">4</div>
+
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+        </div>
+        <div class="cont1">
+            <div class="alpha">5</div>
+
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+
+        </div>
+        <div class="cont1">
+            <div class="alpha">6</div>
+
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+        </div>
+        <div class="cont1">
+            <div class="alpha">7</div>
+
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+            <div class="one">
+            </div>
+            <div class="two">
+            </div>
+
+        </div>
+        <div class="cont1">
+            <div class="alpha" >8</div>
+
+            <div class="two" id="bbl"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="one" id="bbr"></div>
+            <div></div>
+            <div class="num">a</div>
+            <div class="num">b</div>
+            <div class="num">c</div>
+            <div class="num">d</div>
+            <div class="num">e</div>
+            <div class="num">f</div>
+            <div class="num">g</div>
+            <div class="num">h</div>
+        </div>
+    </div>
+</body>
+
+</html>
