@@ -1,8 +1,9 @@
 
 local users = {
-    {name = "Roshan", age = 20},
+    {name = "Roshan", age = 30},
     {name = "sunny", age = 16},
-    {name = "rohini", age = 25}
+    {name = "rohini", age = 19}
+    {name = "akash", age = 35}
 }
 
 
