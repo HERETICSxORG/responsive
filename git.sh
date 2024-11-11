@@ -17,7 +17,7 @@ git pull origin master
 # or main
 git pull origin main
 
-# chornology of git
+# chornology of git mean to create a git repository
 git cd "folder"
 git echo "Hello World" > index.html
 git add .
@@ -30,4 +30,14 @@ rm index.html
 # to revert changes
 git checkout -- index.html
 
+
+# to reinit a git repository after removing config file 
+rm .git/config
+git init
+git add .
+git commit -m "message"
+git remote add origin "url"
+git remote -v   # to check the status of the git repository
+git push origin main
+git push -u origin main
 
