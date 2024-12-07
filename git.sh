@@ -62,4 +62,15 @@ git branch -d "branch name"
 git branch
 # to list all branches including remote branches
 git branch -a
-
+# to push branch to github
+git push origin "branch name"
+# to delete a branch from github
+git push origin --delete "branch name"
+# to pull a branch from github
+git pull origin "branch name"
+# to change the name of a branch
+git branch -m "new branch name"
+# to change the name of a branch on github
+git push origin -u "new branch name"
+# to change remote branch url
+git remote set-url origin "new url"
