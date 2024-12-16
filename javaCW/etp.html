@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        background-color: aqua;
+        border: 2px solid;
+        height: 240px;
+        width: 240px;
+    }
+    tr{border: 2px solid;}
+</style>
+<body>
+  
+    <table id="table">
+         <tr>
+              <th >Name</th>
+              <th id="age">Age</th>
+              <th >City</th>
+         </tr>
+         <tr>
+              <td>roshan</td>
+              <td id="age1">23</td>
+              <td>Delhi</td>
+         </tr>
+         <tr>
+              <td>raj</td>
+              <td id="age2">325</td>
+              <td>Mumbai</td>
+         </tr>
+         <tr>
+              <td>amir</td>
+              <td id="age3">2</td>
+              <td>patna</td>
+         </tr>
+         <tr>
+              <td>rahul</td>
+              <td id="age4">3</td>
+              <td>goa</td>
+         </tr>
+    </table>
+    
+ 
+     <script>
+          const age = document.getElementById('age');
+     //    const age1 = document.getElementById('age1');
+     //    const age2 = document.getElementById('age2');
+     //    const age3 = document.getElementById('age3');
+        age.addEventListener('click',function(){
+               age1.innerText='2' 
+               age2.innerText='3'
+               age3.innerText='23'
+               age4.innerText='325'
+
+            });
+          </script>
+          
+</body>
+</html>

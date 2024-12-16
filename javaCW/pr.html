@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo1 {
+        width: 400px;
+        height: 100px;
+        background-color: red;
+       
+    }
+    #demo2 {
+        width: 400px;
+        height: 100px;
+        background-color: blue;
+       
+    }
+    .demo3 {
+        width: 400px;
+        height: 100px;
+        background-color: green;
+       
+    }
+</style>
+<body>
+    <p id="para" onmouseover="Mouse1('yes daddy')" onmouseleave="Mouse1('dont stop daddy,keep doing')" onmouseup="Mouse1('this is also good')" onmousedown="Mouse1('u always leave inbetwn')">touch</p>
+    <div id="demo1" onmouseover="Mouse2('pink')" onmouseleave="Mouse2('black')"></div>
+    <div id="demo2" onmouseover="Mouse3(event)"></div>
+    <div class="demo3"></div>
+    <input type="text" onkeypress="key1()" onkeydown="key1()" onkeyup="key1()">
+</body>
+<script>
+    function Mouse1(element) {
+        document.getElementById('para').innerHTML = element;
+
+    }
+    function Mouse2(element) {
+        document.getElementById('demo1').style.backgroundColor = element;
+
+    }
+    function Mouse3(element) {
+       var x =element.clientX
+       var y =element.clientY
+       var coor = "X cordinate: " + x + "Y cordinate: " + y;
+       document.getElementById('demo2').innerHTML = coor;
+    }
+    function key1(){
+        alert('key is pressed');
+    }
+
+</script>
+</html>

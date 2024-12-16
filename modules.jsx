@@ -11,7 +11,8 @@ const handleClick = () => {
   return (
 <div style={{ textAlign: 'center', marginTop: '50px' }}>
  <h1>{message}</h1>
-<button onClick={handleClick}>Click Me!</button>
+<button onClick={handleClick} style={{textAlign: 'center',marginBottom: "40px"}}>Click Me!</button>
+
     </div>
   );
 }
