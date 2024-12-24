@@ -74,3 +74,31 @@ git branch -m "new branch name"
 git push origin -u "new branch name"
 # to change remote branch url
 git remote set-url origin "new url"
+
+# steps to setup github new repo frm git 
+
+
+# to get setup github in vscode or terminal
+gh auth login
+
+# Initialize a new Git repository
+git init
+
+# Stage all files in the current directory
+git add .
+
+# Commit the staged files with a message
+git commit -m "Initial commit"
+
+# Create a new GitHub repository using GitHub CLI (skip if using the manual method)
+gh repo create <repo-name> --public
+
+# If manually creating the repo, link your local repo to the GitHub repository
+git remote add origin https://github.com/username/repo.git
+
+# Rename the default branch to main
+git branch -M main
+
+# Push the local repository to GitHub
+git push -u origin main
+
